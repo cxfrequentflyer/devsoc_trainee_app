@@ -1,0 +1,1 @@
+My profile page with the theme of Harmony/Discord for Devsoc trainee program 24T3.
