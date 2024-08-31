@@ -24,28 +24,23 @@ header {
     z-index: 1000;
     transform: translateY(0);
     transition: transform 0.3s ease;
-}
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    letter-spacing: 2px;
+    overflow: hidden;
 }
 
-/* Header Title Link Styles */
-h1 a {
-    text-decoration: none; /* Remove underline */
-    color: #ffffff; /* Text color */
-    background-color: #ffffff00; /* Background color */
-    padding: 10px 10px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 1em; /* Adjust font size if needed */
-    display: inline-block; /* Allows padding and background color to apply */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+header a {
+    display: inline-block;
 }
 
-h1 a:hover {
-    background-color: #23a1c192; /* Darker background color on hover */
-    color: #fff; /* Text color on hover */
+header img {
+    max-width: 500px;
+    height: auto;
+    max-height: 150px;
+    vertical-align: middle;
+    transition: opacity 0.3s ease;
+}
+
+header a:hover img {
+    opacity: 0.8;
 }
 
 nav {
@@ -78,7 +73,7 @@ nav a:hover {
 .menu-button {
     position: fixed;
     left: 20px;
-    top: 20px;
+    top: calc(50% - 1em);
     font-size: 2em;
     cursor: pointer;
     z-index: 1001;
